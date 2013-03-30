@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>guitar interval trainer</title>
+    <meta name="description" content="learn how to recognize intervals by ear and locate them on the guitar fretboard" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/fbbootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-alerts.js"></script>
+
+    <script type="text/javascript" src="js/swfobject.js"></script>
+    <script type="text/javascript" src="js/soundmanager2-nodebug-jsmin.js"></script>
+    <script type="text/javascript" src="js/intervals.js"></script>
+
+</head>
+<body>
+<div class="wrap">
+
+<h2>
+    Guitar Interval Trainer
+</h2>
+
+<div class="intro">
+    <div class="right">
+
+    </div>
+    <h4>
+        Learn to recognize intervals by ear<br />
+        and locate them on the guitar fretboard.
+    </h4>
+</div>
+
+
+<div class="main">
+<div class="fretboard">
+
+
+<div class="string_1 fret fret_2" data-note-name="F#" data-audio-id="27">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_1 fret fret_3" data-note-name="G" data-audio-id="28">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_1 fret fret_4" data-note-name="G#" data-audio-id="29">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_1 fret fret_5" data-note-name="A" data-audio-id="30">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_1 fret fret_6" data-note-name="A#" data-audio-id="31">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_1 fret fret_7" data-note-name="B" data-audio-id="32">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_1 fret fret_8" data-note-name="C" data-audio-id="33">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_1 fret fret_9" data-note-name="C#" data-audio-id="34">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_1 fret fret_10" data-note-name="D" data-audio-id="35">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_1 fret fret_11" data-note-name="D#" data-audio-id="36">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_1 fret fret_12" data-note-name="E" data-audio-id="37">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_2 fret fret_2" data-note-name="C#" data-audio-id="22">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_2 fret fret_3" data-note-name="D" data-audio-id="23">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_2 fret fret_4" data-note-name="D#" data-audio-id="24">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_2 fret fret_5" data-note-name="E" data-audio-id="25">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_2 fret fret_6" data-note-name="F" data-audio-id="26">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_2 fret fret_7" data-note-name="F#" data-audio-id="27">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_2 fret fret_8" data-note-name="G" data-audio-id="28">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_2 fret fret_9" data-note-name="G#" data-audio-id="29">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_2 fret fret_10" data-note-name="A" data-audio-id="30">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_2 fret fret_11" data-note-name="A#" data-audio-id="31">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_2 fret fret_12" data-note-name="B" data-audio-id="32">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_3 fret fret_2 challenge" data-note-name="A" data-audio-id="18">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_3 fret fret_3 challenge" data-note-name="A#" data-audio-id="19">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_3 fret fret_4 challenge" data-note-name="B" data-audio-id="20">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_3 fret fret_5 challenge" data-note-name="C" data-audio-id="21">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_3 fret fret_6 challenge" data-note-name="C#" data-audio-id="22">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_3 fret fret_7 challenge" data-note-name="D" data-audio-id="23">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_3 fret fret_8" data-note-name="D#" data-audio-id="24">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_3 fret fret_9" data-note-name="E" data-audio-id="25">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_3 fret fret_10" data-note-name="F" data-audio-id="26">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_3 fret fret_11" data-note-name="F#" data-audio-id="27">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_3 fret fret_12" data-note-name="G" data-audio-id="28">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_4 fret fret_2 challenge" data-note-name="E" data-audio-id="13">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_4 fret fret_3 challenge" data-note-name="F" data-audio-id="14">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_4 fret fret_4 challenge" data-note-name="F#" data-audio-id="15">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_4 fret fret_5 challenge" data-note-name="G" data-audio-id="16">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_4 fret fret_6 challenge" data-note-name="G#" data-audio-id="17">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_4 fret fret_7 challenge" data-note-name="A" data-audio-id="18">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_4 fret fret_8" data-note-name="A#" data-audio-id="19">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_4 fret fret_9" data-note-name="B" data-audio-id="20">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_4 fret fret_10" data-note-name="C" data-audio-id="21">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_4 fret fret_11" data-note-name="C#" data-audio-id="22">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_4 fret fret_12" data-note-name="D" data-audio-id="23">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_5 fret fret_2 challenge" data-note-name="B" data-audio-id="8">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_5 fret fret_3 challenge" data-note-name="C" data-audio-id="9">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_5 fret fret_4 challenge" data-note-name="C#" data-audio-id="10">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_5 fret fret_5 challenge" data-note-name="D" data-audio-id="11">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_5 fret fret_6 challenge" data-note-name="D#" data-audio-id="12">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_5 fret fret_7 challenge" data-note-name="E" data-audio-id="13">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_5 fret fret_8" data-note-name="F" data-audio-id="14">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_5 fret fret_9" data-note-name="F#" data-audio-id="15">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_5 fret fret_10" data-note-name="G" data-audio-id="16">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_5 fret fret_11" data-note-name="G#" data-audio-id="17">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_5 fret fret_12" data-note-name="A" data-audio-id="18">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_6 fret fret_2 challenge" data-note-name="F#" data-audio-id="3">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_6 fret fret_3 challenge" data-note-name="G" data-audio-id="4">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_6 fret fret_4 challenge" data-note-name="G#" data-audio-id="5">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_6 fret fret_5 challenge" data-note-name="A" data-audio-id="6">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_6 fret fret_6 challenge" data-note-name="A#" data-audio-id="7">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_6 fret fret_7 challenge" data-note-name="B" data-audio-id="8">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_6 fret fret_8" data-note-name="C" data-audio-id="9">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_6 fret fret_9" data-note-name="C#" data-audio-id="10">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_6 fret fret_10" data-note-name="D" data-audio-id="11">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_6 fret fret_11" data-note-name="D#" data-audio-id="12">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+
+
+<div class="string_6 fret fret_12" data-note-name="E" data-audio-id="13">
+    <div class="dot">
+        <span class="note_name"></span>
+    </div>
+</div>
+</div>
+
+<a class="play"></a>
+
+<div class="meters">
+    <div class="led led_10 green"></div>
+    <div class="led led_20 green"></div>
+    <div class="led led_30 green"></div>
+    <div class="led led_40 green"></div>
+    <div class="led led_50 green"></div>
+    <div class="led led_60 green"></div>
+    <div class="led led_70 green"></div>
+    <div class="led led_80 yellow"></div>
+    <div class="led led_90 yellow"></div>
+    <div class="led led_100 red"></div>
+
+    <div class="percent">
+        <span class="number">0</span>%
+    </div>
+    <div class="guesses">
+        out of <span class="number">0</span>
+    </div>
+</div>
+
+</div>
+
+<form>
+    <fieldset>
+        <div class="arrow_up"></div>
+
+        <ul class="inputs-list">
+
+            <li class="first">
+                <label>
+                    <input class="all" type="checkbox" value="all" checked="checked">
+                    <span>all</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input class="interval min" type="checkbox" value="1" checked="checked">
+                    <span class="st_1">1 - minor second</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input class="interval"  type="checkbox" value="4" checked="checked">
+                    <span class="st_4">4 - major third</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input class="interval"  type="checkbox" value="7" checked="checked">
+                    <span class="st_7">7 - perfect fifth</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input class="interval"  type="checkbox" value="10" checked="checked">
+                    <span class="st_10">10 - minor seventh</span>
+                </label>
+            </li>
+
+            <li class="first">
+                <label>
+                    <span><strong>intervals</strong></span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input class="interval"  type="checkbox" value="2" checked="checked">
+                    <span class="st_2">2 - major second</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input class="interval"  type="checkbox" value="5" checked="checked">
+                    <span class="st_5">5 - perfect fourth</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input class="interval"  type="checkbox" value="8" checked="checked">
+                    <span class="st_8">8 - minor sixth</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input class="interval"  type="checkbox" value="11" checked="checked">
+                    <span class="st_11">11 - major seventh</span>
+                </label>
+            </li>
+
+            <li class="first">
+                <label>
+                    <span><strong>to practice</strong></span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input class="interval"  type="checkbox" value="3" checked="checked">
+                    <span class="st_3">3 - minor third</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input class="interval"  type="checkbox" value="6" checked="checked">
+                    <span class="st_6">6 - tritone</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input class="interval"  type="checkbox" value="9" checked="checked">
+                    <span class="st_9">9 - major sixth</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input class="interval"  type="checkbox" value="12" checked="checked">
+                    <span class="st_12">12 - octave</span>
+                </label>
+            </li>
+
+        </ul>
+        <div class="clear"></div>
+    </fieldset>
+
+</form>
+
+<!--
+<div class="streak">
+  <span class="number">0</span> right intervals right in a row.
+</div>
+-->
+
+
+</div>
+</body>
+</html>
