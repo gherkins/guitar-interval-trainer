@@ -42,15 +42,12 @@
 </a>
 
 <div class="wrap">
-
+<div id="share"></div>
 <h2>
     Guitar Interval Trainer
 </h2>
 
 <div class="intro">
-    <div id="share">
-        <div id="share_link" data-url="http://web-development.cc/guitar-interval-trainer/" data-text="the guitar interval trainer - Learn to recognize intervals by ear and locate them on the guitar fretboard."></div>
-    </div>
     <h4>
         Learn to recognize intervals by ear<br/>
         and locate them on the guitar fretboard.
@@ -657,29 +654,29 @@
 
 <script>
     $(function () {
-
-        $('#share_link').sharrre({
+        $('#share').sharrre({
             share: {
-                twitter: true,
+                googlePlus: true,
                 facebook: true,
-                googlePlus: true
+                twitter: true
             },
-            template: '<div class="box"><div class="left">Share</div><div class="middle"><a href="#" class="facebook">f</a><a href="#" class="twitter">t</a><a href="#" class="googleplus">+1</a></div><div class="right">{total}</div></div>',
-            enableHover: false,
-            enableTracking: true,
-            render: function (api, options) {
-                $(api.element).on('click', '.twitter', function () {
-                    api.openPopup('twitter');
-                });
-                $(api.element).on('click', '.facebook', function () {
-                    api.openPopup('facebook');
-                });
-                $(api.element).on('click', '.googleplus', function () {
-                    api.openPopup('googlePlus');
-                });
-            }
+            buttons: {
+                googlePlus: {
+                    size: 'tall',
+                    annotation: 'bubble'
+                },
+                facebook: {
+                    layout: 'box_count'
+                },
+                twitter: {
+                    count: 'vertical'
+                }
+            },
+            url: 'http://web-development.cc/guitar-interval-trainer/',
+            enableHover: true,
+            enableCounter: false,
+            enableTracking: false
         });
-
     });
 </script>
 
