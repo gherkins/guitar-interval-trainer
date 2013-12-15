@@ -660,7 +660,5 @@ ul.inputs-list label span.right {
   float: right;
 }
 
-#share .button{
-  float: left;
-  margin-left: 10px;
+#share iframe {
 }

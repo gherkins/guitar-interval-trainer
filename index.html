@@ -10,7 +10,6 @@
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-alerts.js"></script>
-    <script type="text/javascript" src="js/jquery.sharrre-1.3.4.min.js"></script>
 
 
     <script type="text/javascript" src="js/swfobject.js"></script>
@@ -20,29 +19,20 @@
 </head>
 <body>
 
-<script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-38888541-3']);
-    _gaq.push(['_trackPageview']);
-
-    (function () {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-    })();
-
-</script>
-
-<a href="https://github.com/gherkins/guitar-interval-trainer" id="github">
-    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub">
-</a>
-
 <div class="wrap">
-<div id="share"></div>
+<div id="share">
+    <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fweb-development.cc%2Fguitar-interval-trainer%2F&amp;send=false&amp;layout=button_count&amp;width=125&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:125px; height:21px;" allowTransparency="true"></iframe>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://web-development.cc/guitar-interval-trainer/" data-hashtags="guitar">Tweet</a>
+    <script>!function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, 'script', 'twitter-wjs');</script>
+</div>
 <h2>
     Guitar Interval Trainer
 </h2>
@@ -646,40 +636,23 @@
 
 </form>
 
-<!--
-<div class="streak">
-  <span class="number">0</span> right intervals right in a row.
 </div>
--->
 
-<script>
-    $(function () {
-        $('#share').sharrre({
-            share: {
-                googlePlus: true,
-                facebook: true,
-                twitter: true
-            },
-            buttons: {
-                googlePlus: {
-                    size: 'tall',
-                    annotation: 'bubble'
-                },
-                facebook: {
-                    layout: 'box_count'
-                },
-                twitter: {
-                    count: 'vertical'
-                }
-            },
-            url: 'http://web-development.cc/guitar-interval-trainer/',
-            enableHover: true,
-            enableCounter: false,
-            enableTracking: false
-        });
-    });
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38888541-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
 </script>
-
-</div>
 </body>
 </html>
