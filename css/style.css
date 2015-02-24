@@ -24,6 +24,15 @@ body, html {
   padding-top: 20px;
 }
 
+.instructions {
+  margin-top: 10px;
+}
+
+.instructions p {
+  font-size: 12px;
+  line-height: 15px;
+}
+
 /*canvas*/
 
 .main {
